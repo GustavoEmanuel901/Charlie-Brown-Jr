@@ -1,0 +1,98 @@
+<html lang="pt-br" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8"/>
+    <title> Charlie Brown Jr. </title>
+    <link rel="stylesheet" href="charlie.css">
+    <link rel="stylesheet" href="faleconosco.css">
+    <script>
+        function calc_total(){
+            var qtd = parseInt(document.getElementById('cQtd').value)
+            tot = qtd * 15;
+            document.getElementById('cTot').value = tot;
+        }
+    </script>
+</head>
+<script src="brown.js"></script>
+<body onload="color()">
+<div id="interface">
+    <header id="cabecalho">
+        <h1> Charlie Brown Jr.</h1>
+        <figure class="foto.legenda">
+            <img id="imagem" src= "https://static.cloud-boxloja.com/lojas/slvlh/produtos/c996bb28-e854-4e8a-b535-cec63aa37c6a.png"/>
+            <figcaption>
+                <h4 style="color: white">Chorão</h4>
+            </figcaption>
+        </figure>
+        <nav id="menu">
+            <h1>Menu Principal</h1>
+            <ul>
+                <li onmouseover="mudaFoto('4')" onmouseout="mudaFoto('5')"><a href="tudo.html">Home</a></li>
+                <li onmouseover="mudaFoto('2')" onmouseout="mudaFoto('5')"><a href="albuns.html">Albúns</a></li>
+                <li onmouseover="mudaFoto('1')" onmouseout="mudaFoto('5')"><a href="fotos.html">Fotos</a></li>
+                <li><a>Fale Conosco</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <form method="post" id="fContato" action="gustavoemanuel901@gmail.com" oninput="calc_total();">
+        <fieldset id="usuario">
+            <legend>Identificação do Usuário</legend>
+            <p><label for="cNome">Nome:</label><input type="text" name="tNome" id="cNome" size="31" maxlength="50" placeholder="Nome Completo"/></p>
+            <p><label for="cSenha">Senha:</label><input type="password" name="tSenha" id="cSenha" size="31" placeholder="Minímo 8 caracteres"/></p>
+            <p><label for="cEmail">E-mail:</label><input type="email" name="tEmail" id="cEmail" size="31" placeholder="E-mail"/></p>
+           <fieldset id="sexo"><legend>Sexo:</legend>
+               <input type="radio" name="tSexo" id="cMasc"/> <label for="cMasc"> Masculino </label><br/>
+              <input type="radio" name="tSexo" id="cFem"/> <label for="cFem"> Feminino</label></fieldset>
+            <p>Data de Nascimento:<input type="date" name="tNasc" id="cNasc" placeholder="Sua data de nascimento" size="20"/><label for="cNasc"></label></p>
+        </fieldset>
+
+        <fieldset id="endereco">
+            <legend> Endereço do Usuário</legend>
+            <p><label for="cCidade">Cidade:</label><input type="text" name="tCidade" id="cCidade" size="31" placeholder="Sua Cidade"/></p>
+            <p><label for="cEstado">Estado:</label><select type="text" name="tEstado" id="cEstado" >
+            <optgroup label="Região Sudeste">
+                <option>RJ</option>
+                <option>SP</option>
+                <option>MG</option>
+                <option>ES</option>
+            </optgroup>
+            <optgroup label="Região Sul">
+                <option>PR</option>
+                <option>SC</option>
+                <option>RS</option>
+            </optgroup>
+            </select></p>
+            <p><label for="cBairro">Bairro:</label><input type="text" name="tBairro" id="cBairro" size="31" placeholder="Seu Bairro"</p>
+        </fieldset>
+
+        <fieldset id="mensagem">
+            <legend>Mensagem do Usuário</legend>
+            <p id="msn"><label for="cMsg">Sua mensagem:</label>
+                <textarea name="tMsg" id="cMsg" cols="45" rows="5"></textarea></p>
+        </fieldset>
+
+        <fieldset id="pedido">
+            <legend>Quero um disco</legend>
+            <p><input type="checkbox" name="tPed" id="cPed"/><label for="cPed">Comprar Disco</p>
+            <p><label for="cAlbum">álbum(s)</label><select type="text" name="tAlbum" id="cAlbum">
+                <option> Acústico MTV</option>
+                <option>Nadando com os Tubarões</option>
+                <option>La Familia 013</option>
+                <option>Música Popular Caiçara</option>
+                <option>Imunidade Musical</option>
+                <option>Ritmo, Ritual e Responsa</option>
+                <option>Camisa 10 Joga Bola até na Chuva</option>
+            </select></p>
+            <p><label for="cQtd">Quantidade</label><input type="number" name="tQtd" id="cQtd"/></p>
+            <p><label for="cTot">Preço Total: R$</label><input type="number" name="tTot" id="cTot" placeholder="Total a Pagar" readonly></p>
+        </fieldset>
+        <input type="button" value="Enviar" id="enviar" onclick="loko()"/>
+    </form>
+
+    <footer id="rodape">
+        <p> Copyright &copy; 2013- por Gustavo Emanuel. <br/>
+            <a href="https://www.facebook.com/gustavoemanuel.teixeiracavalcante.9" target="_blank">Facebook</a> - <a href="https://www.instagram.com/emanuel_gust03/?hl=pt-br" target="_blank">Instagram</a></p>
+    </footer>
+</div>
+</body>
+</html>

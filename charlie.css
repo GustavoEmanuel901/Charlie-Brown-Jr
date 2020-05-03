@@ -1,0 +1,162 @@
+@charset"UTF-8";
+
+body {
+    background-color: gray;
+    color: white;
+}
+p {
+    text-align: justify;
+    text-indent: 50px;
+}
+h1.titulo{
+    font-size: 30pt;
+    text-align: center;
+}
+h3.data{
+    text-align: right;
+    font-size: 10pt;
+}
+h2.autor {
+    text-align: right;
+    font-size: 15pt;
+}
+header#cabecalho h1 {
+    text-align: left;
+}
+a{
+    text-decoration: none;
+    color: deepskyblue;
+}
+a:hover{
+    color: white;
+    text-decoration: underline;
+}
+img {
+    width: 100%;
+    height: 100%;
+    border: 6px solid red;
+    margin: 0px;
+    position: relative;
+}
+pre {
+    text-transform: uppercase;
+}
+div#interface {
+    background-color: black;
+    width:900px;
+    margin: 0px auto 0px auto;
+    box-shadow: 0px 0px 20px black;
+    padding: 0px 10px 0px 10px;
+}
+h4 {
+    text-align: center
+}
+figure.foto\.legenda figcaption {
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    background-color: rgba(0,0,0,.4);
+    color: black;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 20pt;
+    transition: opacity 1s;
+}
+figure.foto\.legenda {
+    position: relative;
+}
+figure.foto\.legenda:hover figcaption {
+    opacity: 1;
+}
+
+/*  Formatação de menu */
+
+nav#menu ul {
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: 0px;
+    left: 600px;
+}
+nav#menu li {
+    display: inline-block;
+    background-color: #dddddd;
+    padding: 10px;
+    margin: 2px;
+    transition: background-color 1s;
+}
+nav#menu li:hover {
+    background-color: #606060;
+}
+nav#menu {
+    display: block;
+}
+nav#menu h1 {
+    display: none;
+}
+nav#menu a {
+    text-decoration: none;
+    color: #000000;
+}
+nav#menu a:hover{
+    color: white;
+    text-decoration: underline;
+}
+header#cabecalho {
+    border-bottom: 1px white dashed;
+    padding-bottom: 20px;
+}
+section#corpo{
+    display: block;
+    width: 500px;
+    float: left;
+    border-right: 1px solid #606060;
+    padding-right: 15px;
+}
+article#texto h1 {
+    background-color: red;
+    padding: 5px 0px 5px 10px;
+    margin: 10px 0px 10px 0px;
+}
+aside#lateral {
+    display: block;
+    width: 350px;
+    float: right;
+}
+aside#lateral h1{
+    background-color: red;
+    padding: 5px 0px 5px 10px;
+    margin: 10px 0px 10px 0px;
+}
+table#tabela {
+    border: 1px solid red;
+    border-spacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+table#tabela td{
+    border: 1px solid #606060;
+    padding: 7px;
+
+}
+footer#rodape {
+    clear: both;
+    border-top:1px solid #606060;
+}
+footer#rodape p {
+    text-align: center;
+}
+iframe {
+    float: center;
+    display: block;
+    width: 70%;
+    height: 150%;
+    border: 4px solid red;
+    padding: 5px;
+    margin: 10px 50px 10px 50px;
+}
+ul#mus {
+    font: normal 15pt Arial;
+}

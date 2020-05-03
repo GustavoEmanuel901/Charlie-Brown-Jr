@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+    ul#albuns-fotos {
+        width: 700px;
+        margin: 0 auto;
+        padding: 50px;
+        overflow: hidden;
+        list-style: none;
+    }
+
+    ul#albuns-fotos li {
+        float: left;
+        width: 200px;
+        height: 200px;
+        margin: 10px;
+        border: 5px solid red;
+        box-shadow: 1px 1px 3px white;
+        -webkit-transition: all 0.5s ease-in;
+    }
+
+    ul#albuns-fotos li:hover {
+       -webkit-transform: scale(1.5);
+    }
+
+    ul#albuns-fotos span {
+        opacity: 0;
+        color: white;
+        text-shadow: 1px 1px 1px black;
+        background-color: #dddddd;
+        font-size: 9pt;
+        line-height: 370px;
+        padding: 5px;
+    }
+
+    ul#albuns-fotos li:hover span {
+        opacity: 1;
+    }
+
+    ul#albuns-fotos li#foto01 {
+        background: url("https://i.ytimg.com/vi/jp288zfsNTI/maxresdefault.jpg") no-repeat;
+        background-position: 50% 50%;
+        background-size: 400px 400px;
+    }
+    ul#albuns-fotos li#foto01:hover {
+        background-position: 0px 0px;
+        background-size: 200px 200px;
+    }
+
+    ul#albuns-fotos li#foto02 {
+        background: url("https://teleguiado.com/wp-content/uploads/2017/10/14715456.jpg") no-repeat;
+        background-position: 50% 50%;
+        background-size: 400px 400px;
+        background-color: #ffffff;
+    }
+    ul#albuns-fotos li#foto02:hover {
+         background-position: 0px 0px;
+         background-size: 200px 200px;
+     }
+
+    ul#albuns-fotos li#foto03 {
+        background: url("https://i.pinimg.com/originals/32/60/bf/3260bf5b2bb23034535fa9d5c20ddcab.jpg") no-repeat;
+        background-position: 50% 50%;
+        background-size: 400px 400px;
+        background-color: #ffffff;
+    }
+    ul#albuns-fotos li#foto03:hover {
+        background-position: 0px 0px;
+        background-size: 200px 200px;
+    }
+
+    ul#albuns-fotos li#foto04 {
+        background: url("https://www.vagalume.com.br/dynimage/news38775-big.jpg") no-repeat;
+        background-position: 50% 50%;
+        background-size: 400px 400px;
+        background-color: #ffffff;
+    }
+    ul#albuns-fotos li#foto04:hover {
+        background-position: 0px 0px;
+        background-size: 200px 200px;
+    }
+
+    ul#albuns-fotos li#foto05 {
+        background: url("https://http2.mlstatic.com/dvd-o-magnata-original-charlie-brown-jr-choro-D_NQ_NP_983012-MLB29550719265_032019-F.jpg") no-repeat;
+        background-position: 50% 50%;
+        background-size: 400px 400px;
+        background-color: #ffffff;
+    }
+    ul#albuns-fotos li#foto05:hover {
+        background-position: 0px 0px;
+        background-size: 200px 200px;
+    }
+
+    ul#albuns-fotos li#foto06 {
+        background: url("https://upload.wikimedia.org/wikipedia/pt/thumb/7/76/La_Fam%C3%ADlia_013.jpg/220px-La_Fam%C3%ADlia_013.jpg") no-repeat;
+        background-position: 50% 50%;
+        background-size: 400px 400px;
+        background-color: #ffffff;
+    }
+    ul#albuns-fotos li#foto06:hover {
+        background-position: 0px 0px;
+        background-size: 200px 200px;
+    }
